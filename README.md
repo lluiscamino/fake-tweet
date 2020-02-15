@@ -1,8 +1,8 @@
 # Fake Tweet
-Tweet React component
+Tweet React component. See a [live demo](https://lluiscamino.github.io/fake-tweet/).
 
 ## Example
-![Fake tweet example](example.png)
+![Fake tweet example](https://github.com/lluiscamino/fake-tweet/blob/master/example.png?raw=true)
 
 ## Installation
 
@@ -33,7 +33,7 @@ function App() {
             },
             text: "This is a fake tweet",
             image: "",
-            date: "3:32 PM",
+            date: "3:32 PM · Feb 14, 1997",
             app: "Twitter for iPhone",
             retweets: 32000,
             likes: 12700
