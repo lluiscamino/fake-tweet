@@ -1,0 +1,163 @@
+.tweet {
+    font-size: 15px;
+    text-align: left;
+    padding: 15px 15px 0 15px;
+    max-width: 600px;
+    width: 60%;
+    border: 1px solid #e6ecf0;
+    color: rgb(20, 23, 26);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.user-info-right {
+    padding-top: 2px;
+}
+.user-name {
+    font-weight: bold;
+}
+.user-name-txt {
+    display: inline;
+}
+.user-nickname {
+    cursor: pointer;
+    color: rgb(101, 119, 134);
+}
+.icon {
+    margin-left: 3px;
+    display: inline;
+    position: relative;
+    top: 4px;
+}
+.icon svg {
+    height: 1.25em;
+}
+.verified-icon-svg {
+    fill: rgba(29,161,242,1.00);
+}
+.tweet-text {
+    padding-top: 6px;
+    font-size: 23px;
+    clear: left;
+}
+.tweet-text .txt {
+    padding-bottom: 15px;
+}
+.date-app-details {
+    color: rgb(101, 119, 134);
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6ecf0;
+}
+.rt-likes {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6ecf0;
+    color: rgb(101, 119, 134);
+}
+.rt-likes strong {
+    color: rgb(20, 23, 26);
+}
+.num-likes {
+    margin-left: 20px;
+}
+.app {
+    color: rgb(27, 149, 224);
+}
+.fake-link {
+    cursor: pointer;
+}
+.fake-link:hover {
+    text-decoration: underline;
+}
+.avatar-container {
+    margin-right: 10px;
+    float: left;
+}
+.avatar {
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.drop-button {
+    height: 27px;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right;
+    transition: 0.2s;
+}
+.drop-button svg {
+    width: 1em;
+    height: 1em;
+    fill: rgb(101, 119, 134);
+}
+.drop-button:hover {
+    background-color: rgba(29,161,242, 0.1);
+}
+.drop-button svg:hover {
+    fill: rgb(27, 149, 224);
+}
+.bottom-button {
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: calc(10%);
+    margin-right: calc(10% - 24px);
+}
+.bottom-button > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.bottom-button svg {
+    padding: 7px;
+    border-radius: 50%;
+    margin: auto;
+    fill: rgb(101, 119, 134);
+    height: 1.5em;
+    width: 1.6em;
+    transition: 0.2s;
+}
+.bottom-button.blue svg:hover {
+    fill: rgb(27, 149, 224);
+}
+.bottom-button.green svg:hover {
+    fill: rgb(23, 191, 99);
+}
+.bottom-button.red svg:hover {
+    fill: rgb(215, 42, 94);
+}
+.bottom-button.blue svg:hover {
+    background-color: rgba(29,161,242, 0.1);
+}
+.bottom-button.green svg:hover {
+    background-color: rgba(23, 191, 99, 0.1);
+}
+.bottom-button.red svg:hover {
+    background-color: rgba(215, 42, 94, 0.1);
+}
+.image-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.image-container img {
+    border-radius: 13px;
+    border: 1px solid #ccd6dd;
+    width: 100%;
+}
+.twemoji-sm, .twemoji-bg {
+    position: relative;
+    top: 4px;
+}
+.twemoji-sm {
+    height: 18px;
+    width: 18px;
+}
+.twemoji-bg {
+    height: 28px;
+    width: 28px;
+}
