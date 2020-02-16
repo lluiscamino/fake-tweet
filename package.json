@@ -1,7 +1,7 @@
 {
   "name": "fake-tweet",
   "description": "Tweet React Component",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Lluís Camino",
   "homepage": "https://lluiscamino.github.io/fake-tweet",
   "main": "build/index.js",
