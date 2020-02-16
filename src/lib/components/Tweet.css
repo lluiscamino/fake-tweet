@@ -1,3 +1,8 @@
+@media all and (min-width:0px) and (max-width: 425px) {
+    .tweet {
+        width: 90% !important;
+    }
+}
 .tweet {
     font-size: 15px;
     text-align: left;
