@@ -104,13 +104,17 @@
 .drop-button svg:hover {
     fill: rgb(27, 149, 224);
 }
+.bottom-buttons {
+    display: flex;
+    flex-direction: row;
+}
 .bottom-button {
     height: 48px;
     width: 48px;
     display: inline-block;
     cursor: pointer;
-    margin-left: calc(10%);
-    margin-right: calc(10% - 24px);
+    flex: 0 25%;
+    box-sizing: border-box;
 }
 .bottom-button > div {
     display: flex;
