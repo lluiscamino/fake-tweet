@@ -9,13 +9,14 @@ function App() {
   const [avatar, setAvatar] = useState("https://pbs.twimg.com/profile_images/1202545168542511104/sEunL4Iq_400x400.jpg");
   const [verified, setVerified] = useState(true);
   const [locked, setLocked] = useState(false);
+  const [nightMode, setNightMode] = useState(false);
   const [text, setText] = useState("🏆 WE’RE CLUB WORLD CHAMPIONS!! 🏆");
   const [image, setImage] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
   const [date, setDate] = useState("9:06 PM · Dec 21, 2019");
   const [app, setApp] = useState("Twitter Media Studio");
   const [retweets, setRetweets] = useState(48900);
   const [likes, setLikes] = useState(180500);
-  
+
   return (
     <div className="App">
       <header className="App-header">
@@ -28,6 +29,7 @@ function App() {
               verified: verified,
               locked: locked
             },
+            nightMode: nightMode,
             text: text,
             image: image,
             date: date,
@@ -71,6 +73,11 @@ function App() {
             </fieldset>
             <fieldset>
               <legend>Tweet</legend>
+              <div>
+                <label htmlFor="night-mode">Night Mode</label>
+                <input type="checkbox" id="night-mode" checked={nightMode}
+                  onChange={e => { setNightMode(e.target.checked) }} />
+              </div>
               <div>
                 <label htmlFor="text">Text</label>
                 <textarea id="text" value={text} onChange={e => setText(e.target.value)}
