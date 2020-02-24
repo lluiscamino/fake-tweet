@@ -1,7 +1,7 @@
 {
   "name": "fake-tweet",
   "description": "Tweet React Component",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "author": "Lluís Camino",
   "homepage": "https://lluiscamino.github.io/fake-tweet",
   "main": "build/index.js",
@@ -24,6 +24,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "react-process-string": "^1.2.0",
     "react-twemoji": "^0.2.3",
     "serialize-javascript": "^3.0.0"
   },

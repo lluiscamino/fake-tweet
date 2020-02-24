@@ -13,6 +13,7 @@
     color: rgb(20, 23, 26);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #ffffff;
+    overflow: hidden;
 }
 .user-info-right {
     padding-top: 2px;
@@ -64,7 +65,7 @@
 .num-likes {
     margin-left: 20px;
 }
-.app {
+.app, .mention, .hashtag {
     color: rgb(27, 149, 224);
 }
 .fake-link {
