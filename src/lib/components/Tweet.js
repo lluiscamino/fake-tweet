@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import './Tweet.css';
-import Twemoji from 'react-twemoji';
-import processString from 'react-process-string';
+import React, { useState, useEffect } from "react";
+import "./Tweet.css";
+import Twemoji from "react-twemoji";
+import processString from "react-process-string";
 
 function Tweet(props) {
 
@@ -26,7 +26,7 @@ function Tweet(props) {
                     regex: /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/,
                     fn: (key, result) => {
                         return (
-                            <Twemoji key={key} options={{ className: 'twemoji-bg' }} style={{display: "inline"}}>
+                            <Twemoji key={key} options={{ className: "twemoji-bg" }} style={{display: "inline"}}>
                                 {result[1]}
                             </Twemoji>
                         );
@@ -39,16 +39,14 @@ function Tweet(props) {
     function styleNumber(num) {
         let div = num / 1000000;
         if (div >= 1) {
-            return div.toFixed(1).replace(/([0-9]+(\.[0-9]+[1-9])?)(\.?0+$)/, '$1') + "M";
+            return div.toFixed(1).replace(/([0-9]+(\.[0-9]+[1-9])?)(\.?0+$)/, "$1") + "M";
         }
         div = num / 1000;
         if (div >= 1) {
-            return div.toFixed(1).replace(/([0-9]+(\.[0-9]+[1-9])?)(\.?0+$)/, '$1') + "K";
+            return div.toFixed(1).replace(/([0-9]+(\.[0-9]+[1-9])?)(\.?0+$)/, "$1") + "K";
         }
         return num;
     }
-
-    /**/
 
     const verifiedIcon =
         <div className="icon">
@@ -82,7 +80,7 @@ function Tweet(props) {
                         <svg viewBox="0 0 24 24"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
                     </div>
                     <div className="user-name">
-                        <Twemoji options={{ className: 'twemoji-sm' }} className="user-name-txt">
+                        <Twemoji options={{ className: "twemoji-sm" }} className="user-name-txt">
                             <span className="fake-link">{props.config.user.name}</span>
                         </Twemoji>
                         {props.config.user.verified && verifiedIcon}
@@ -92,7 +90,7 @@ function Tweet(props) {
                 </div>
             </div>
             <div className="tweet-text">
-                {typeof text !== "undefined" && text !== '' && <div className="txt">{text}</div>}
+                {typeof text !== "undefined" && text !== "" && <div className="txt">{text}</div>}
                 {typeof props.config.image !== "undefined" && props.config.image !== "" &&
                     <div className="image-container">
                         <img src={props.config.image} alt="" />
