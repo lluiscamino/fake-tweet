@@ -43,15 +43,15 @@ function App() {
             <fieldset>
               <legend>User</legend>
               <div>
-                <label htmlFor="nickame">Nickname</label>
+                <label htmlFor="nickname">Nickname</label>
                 <input type="text" id="nickname" value={nickname} onChange={e => setNickname(e.target.value)} />
               </div>
               <div>
-                <label htmlFor="nickame">Name</label>
+                <label htmlFor="name">Name</label>
                 <input type="text" id="name" value={name} onChange={e => setName(e.target.value)} />
               </div>
               <div>
-                <label htmlFor="nickame">Avatar</label>
+                <label htmlFor="avatar">Avatar</label>
                 <input type="text" id="avatar" value={avatar} onChange={e => setAvatar(e.target.value)} />
               </div>
               <div>
@@ -81,7 +81,7 @@ function App() {
               <div>
                 <label htmlFor="text">Text</label>
                 <textarea id="text" value={text} onChange={e => setText(e.target.value)}
-                  maxLength="280"></textarea>
+                  maxLength="280"/>
               </div>
               <div>
                 <label htmlFor="image">Image</label>
