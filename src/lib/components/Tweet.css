@@ -186,3 +186,7 @@
 .nightmode .verified-icon-svg, .nightmode .lock-icon-svg {
     fill: rgba(217,217,217,1.00);
 }
+.tweet svg {
+    box-sizing: content-box !important;
+    vertical-align: baseline !important;
+}
