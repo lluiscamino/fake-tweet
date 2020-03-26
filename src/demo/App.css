@@ -28,7 +28,7 @@
   margin-right: 20px;
 }
 
-.config input, textarea {
+.config input, textarea, select {
   width: 200px;
 }
 

@@ -66,10 +66,10 @@ function Tweet(props) {
             </svg>
         </div>;
 
-    const nightMode = typeof props.config.nightMode !== "undefined" && props.config.nightMode === true;
+    const display = ["default", "dim", "lightsout"].includes(props.config.display) ? props.config.display : "default";
 
     return (
-        <div className={"tweet" + (nightMode ? " nightmode" : "")}>
+        <div className={"tweet " + display}>
             <div className="user-info">
                 <div className="avatar-container">
                     <img className="avatar" src={props.config.user.avatar}

@@ -172,21 +172,37 @@
     height: 28px;
     width: 28px;
 }
-.tweet.nightmode {
+.tweet svg {
+    box-sizing: content-box !important;
+    vertical-align: baseline !important;
+}
+/* Lights out */
+.tweet.lightsout {
     background: #000000;
     border-color: rgb(47, 51, 54);
     color: rgb(217, 217, 217);
 }
-.nightmode .rt-likes strong {
+.lightsout .rt-likes strong {
     color: rgb(217, 217, 217);
 }
-.nightmode .rt-likes, .nightmode .date-app-details, .nightmode .image-container img {
+.lightsout .rt-likes, .lightsout .date-app-details, .lightsout .image-container img {
     border-color: rgb(47, 51, 54);
 }
-.nightmode .verified-icon-svg, .nightmode .lock-icon-svg {
+.lightsout .verified-icon-svg, .lightsout .lock-icon-svg {
     fill: rgba(217,217,217,1.00);
 }
-.tweet svg {
-    box-sizing: content-box !important;
-    vertical-align: baseline !important;
+/* Dim */
+.tweet.dim {
+    background: rgb(21, 32, 43);
+    border-color: #38444c;
+    color: rgb(255, 255, 255);
+}
+.dim .rt-likes strong {
+    color: rgb(255, 255, 255);
+}
+.dim .rt-likes, .dim .date-app-details, .dim .image-container img {
+    border-color: rgb(47, 51, 54);
+}
+.dim .verified-icon-svg, .dim .lock-icon-svg {
+    fill: rgb(255, 255, 255);
 }

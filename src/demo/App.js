@@ -9,7 +9,7 @@ function App() {
   const [avatar, setAvatar] = useState("https://pbs.twimg.com/profile_images/1202545168542511104/sEunL4Iq_400x400.jpg");
   const [verified, setVerified] = useState(true);
   const [locked, setLocked] = useState(false);
-  const [nightMode, setNightMode] = useState(false);
+  const [display, setDisplay] = useState("default");
   const [text, setText] = useState("🏆 WE’RE CLUB WORLD CHAMPIONS!! 🏆");
   const [image, setImage] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
   const [date, setDate] = useState("9:06 PM · Dec 21, 2019");
@@ -29,7 +29,7 @@ function App() {
               verified: verified,
               locked: locked
             },
-            nightMode: nightMode,
+            display: display, // default, dim or light-out
             text: text,
             image: image,
             date: date,
@@ -74,9 +74,12 @@ function App() {
             <fieldset>
               <legend>Tweet</legend>
               <div>
-                <label htmlFor="night-mode">Night Mode</label>
-                <input type="checkbox" id="night-mode" checked={nightMode}
-                  onChange={e => { setNightMode(e.target.checked) }} />
+                <label htmlFor="display">Display</label>
+                <select name="display" id="display" onChange={e => {setDisplay(e.target.value)}}>
+                  <option value="default">Default</option>
+                  <option value="dim">Dim</option>
+                  <option value="lightsout">Lights out</option>
+                </select>
               </div>
               <div>
                 <label htmlFor="text">Text</label>

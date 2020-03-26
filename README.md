@@ -30,7 +30,7 @@ function App() {
       verified: true,
       locked: false
     },
-    nightMode: false,
+    display: "default",
     text: "This is a fake tweet",
     image: "",
     date: "3:32 PM · Feb 14, 1997",
@@ -56,7 +56,7 @@ You also need to pass a `config` object to the component with the following prop
   - Avatar: Twitter avatar URL
   - Verified: Set to true to include the verified icon
   - Locked: Set to true to include the private account icon
-- NightMode: Set to true to display tweet in night mode
+- Display: Twitter theme (``default``, ``dim`` or ``lightsout``)
 - Text: The text the tweet will display
 - Image (optional): You can include an image to the tweet
 - Date: A string that represents a date
