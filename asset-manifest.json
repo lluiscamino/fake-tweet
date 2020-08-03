@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/fake-tweet/static/css/main.07baabda.chunk.css",
-    "main.js": "/fake-tweet/static/js/main.3f6521a9.chunk.js",
-    "main.js.map": "/fake-tweet/static/js/main.3f6521a9.chunk.js.map",
-    "runtime-main.js": "/fake-tweet/static/js/runtime-main.92e2a7b4.js",
-    "runtime-main.js.map": "/fake-tweet/static/js/runtime-main.92e2a7b4.js.map",
-    "static/css/2.eaf4e338.chunk.css": "/fake-tweet/static/css/2.eaf4e338.chunk.css",
-    "static/js/2.ba0c4fef.chunk.js": "/fake-tweet/static/js/2.ba0c4fef.chunk.js",
-    "static/js/2.ba0c4fef.chunk.js.map": "/fake-tweet/static/js/2.ba0c4fef.chunk.js.map",
-    "index.html": "/fake-tweet/index.html",
-    "precache-manifest.04bad6dce9dcbeac0010cb6af8c2e686.js": "/fake-tweet/precache-manifest.04bad6dce9dcbeac0010cb6af8c2e686.js",
-    "service-worker.js": "/fake-tweet/service-worker.js",
-    "static/css/2.eaf4e338.chunk.css.map": "/fake-tweet/static/css/2.eaf4e338.chunk.css.map",
-    "static/css/main.07baabda.chunk.css.map": "/fake-tweet/static/css/main.07baabda.chunk.css.map",
-    "static/js/2.ba0c4fef.chunk.js.LICENSE.txt": "/fake-tweet/static/js/2.ba0c4fef.chunk.js.LICENSE.txt"
+    "main.css": "/lluiscamino/fake-tweet/static/css/main.51073101.chunk.css",
+    "main.js": "/lluiscamino/fake-tweet/static/js/main.ce418e4e.chunk.js",
+    "main.js.map": "/lluiscamino/fake-tweet/static/js/main.ce418e4e.chunk.js.map",
+    "runtime-main.js": "/lluiscamino/fake-tweet/static/js/runtime-main.9146f19b.js",
+    "runtime-main.js.map": "/lluiscamino/fake-tweet/static/js/runtime-main.9146f19b.js.map",
+    "static/css/2.d9e9e0c2.chunk.css": "/lluiscamino/fake-tweet/static/css/2.d9e9e0c2.chunk.css",
+    "static/js/2.df685943.chunk.js": "/lluiscamino/fake-tweet/static/js/2.df685943.chunk.js",
+    "static/js/2.df685943.chunk.js.map": "/lluiscamino/fake-tweet/static/js/2.df685943.chunk.js.map",
+    "index.html": "/lluiscamino/fake-tweet/index.html",
+    "precache-manifest.922f1b77320951f50af5bf703c21e0a7.js": "/lluiscamino/fake-tweet/precache-manifest.922f1b77320951f50af5bf703c21e0a7.js",
+    "service-worker.js": "/lluiscamino/fake-tweet/service-worker.js",
+    "static/css/2.d9e9e0c2.chunk.css.map": "/lluiscamino/fake-tweet/static/css/2.d9e9e0c2.chunk.css.map",
+    "static/css/main.51073101.chunk.css.map": "/lluiscamino/fake-tweet/static/css/main.51073101.chunk.css.map",
+    "static/js/2.df685943.chunk.js.LICENSE.txt": "/lluiscamino/fake-tweet/static/js/2.df685943.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.92e2a7b4.js",
-    "static/css/2.eaf4e338.chunk.css",
-    "static/js/2.ba0c4fef.chunk.js",
-    "static/css/main.07baabda.chunk.css",
-    "static/js/main.3f6521a9.chunk.js"
+    "static/js/runtime-main.9146f19b.js",
+    "static/css/2.d9e9e0c2.chunk.css",
+    "static/js/2.df685943.chunk.js",
+    "static/css/main.51073101.chunk.css",
+    "static/js/main.ce418e4e.chunk.js"
   ]
 }
