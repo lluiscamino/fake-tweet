@@ -48,6 +48,22 @@ function Tweet(props) {
         return num;
     }
 
+    function getRetweetsCount(rts, comments) {
+        rts = parseInt(rts);
+        comments = parseInt(comments);
+        if (isNaN(rts) || rts < 0) rts = 0;
+        if (isNaN(comments) || comments < 0) comments = 0;
+        return rts + comments;
+    }
+
+    function getRetweetsText(comments) {
+        comments = parseInt(comments);
+        if (isNaN(comments) || comments <= 0) {
+            return "Retweets";
+        }
+        return "Retweets and comments";
+    }
+
     const verifiedIcon =
         <div className="icon">
             <svg viewBox="0 0 24 24" aria-label="Verified account" className="verified-icon-svg">
@@ -101,8 +117,12 @@ function Tweet(props) {
                 {props.config.date} · <span className="fake-link app">{props.config.app}</span>
             </div>
             <div className="rt-likes">
-                <span className="fake-link num-rts"><strong>{styleNumber(props.config.retweets)}</strong> Retweets</span>
-                <span className="fake-link num-likes"><strong>{styleNumber(props.config.likes)}</strong> Likes</span>
+                <span className="fake-link num-rts">
+                    <strong>{styleNumber(getRetweetsCount(props.config.retweets, props.config.retweetsWithComments))}</strong> {getRetweetsText(props.config.retweetsWithComments)}
+                </span>
+                <span className="fake-link num-likes">
+                    <strong>{styleNumber(props.config.likes)}</strong> Likes
+                </span>
             </div>
             <div className="bottom-buttons">
                 <div className="bottom-button blue"><div><svg viewBox="0 0 24 24"><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg></div></div>

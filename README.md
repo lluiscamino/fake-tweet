@@ -36,6 +36,7 @@ function App() {
     date: "3:32 PM · Feb 14, 1997",
     app: "Twitter for iPhone",
     retweets: 32000,
+    retweetsWithComments: 100,
     likes: 12700
   };
   return (
@@ -62,4 +63,5 @@ You also need to pass a `config` object to the component with the following prop
 - Date: A string that represents a date
 - App: For example, "Twitter for iPhone"
 - Retweets: Number of retweets
+- Retweets with comments: Number of retweets with comments
 - Likes: Number of likes

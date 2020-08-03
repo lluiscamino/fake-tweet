@@ -14,7 +14,8 @@ function App() {
   const [image, setImage] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
   const [date, setDate] = useState("9:06 PM · Dec 21, 2019");
   const [app, setApp] = useState("Twitter Media Studio");
-  const [retweets, setRetweets] = useState(48900);
+  const [retweets, setRetweets] = useState(47081);
+  const [retweetsWithComments, setRetweetsWithComments] = useState(5526);
   const [likes, setLikes] = useState(180500);
 
   return (
@@ -35,6 +36,7 @@ function App() {
             date: date,
             app: app,
             retweets: retweets,
+            retweetsWithComments: retweetsWithComments,
             likes: likes
           }
         } />
@@ -101,6 +103,10 @@ function App() {
               <div>
                 <label htmlFor="retweets">Retweets</label>
                 <input type="number" id="retweets" value={retweets} onChange={e => setRetweets(e.target.value)} />
+              </div>
+              <div>
+                <label htmlFor="retweets">RTs w/ comments</label>
+                <input type="number" id="retweetsWithComments" value={retweetsWithComments} onChange={e => setRetweetsWithComments(e.target.value)} />
               </div>
               <div>
                 <label htmlFor="likes">Likes</label>
