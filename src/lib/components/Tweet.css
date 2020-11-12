@@ -65,7 +65,7 @@
 .rt-likes .fake-link:not(:first-child) {
     margin-left: 20px;
 }
-.app, .mention, .hashtag {
+.mention, .hashtag {
     color: rgb(27, 149, 224);
 }
 .fake-link {
