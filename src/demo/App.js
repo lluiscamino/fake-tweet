@@ -12,6 +12,9 @@ function App() {
   const [display, setDisplay] = useState("default");
   const [text, setText] = useState("🏆 WE’RE CLUB WORLD CHAMPIONS!! 🏆");
   const [image, setImage] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
+  const [image1, setImage1] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
+  const [image2, setImage2] = useState("");
+  const [image3, setImage3] = useState("");
   const [date, setDate] = useState("9:06 PM · Dec 21, 2019");
   const [app, setApp] = useState("Twitter Media Studio");
   const [retweets, setRetweets] = useState(47081);
@@ -33,6 +36,9 @@ function App() {
             display: display, // default, dim or light-out
             text: text,
             image: image,
+            image1: image1,
+            image2: image2,
+            image3: image3,
             date: date,
             app: app,
             retweets: retweets,
@@ -91,6 +97,18 @@ function App() {
               <div>
                 <label htmlFor="image">Image</label>
                 <input type="text" id="image" value={image} onChange={e => setImage(e.target.value)} />
+              </div>
+              <div>
+                <label htmlFor="image1">Image 1</label>
+                <input type="text" id="image1" value={image1} onChange={e => setImage1(e.target.value)} />
+              </div>
+              <div>
+                <label htmlFor="image2">Image 2</label>
+                <input type="text" id="image2" value={image2} onChange={e => setImage2(e.target.value)} />
+              </div>
+              <div>
+                <label htmlFor="image3">Image 3</label>
+                <input type="text" id="image4" value={image3} onChange={e => setImage3(e.target.value)} />
               </div>
               <div>
                 <label htmlFor="date">Date</label>

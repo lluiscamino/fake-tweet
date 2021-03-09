@@ -160,6 +160,38 @@
     border: 1px solid #ccd6dd;
     width: 100%;
 }
+
+/**
+* Two images
+*/
+.two-image-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 318px;
+}
+.two-image-container .two-image-image-one {
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+.two-image-container .spacer {
+    width: 2px;
+    height: 100%;
+    float: left;
+}
+.two-image-container .two-image-image-two {
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+
 .twemoji-sm, .twemoji-bg {
     position: relative;
     top: 4px;

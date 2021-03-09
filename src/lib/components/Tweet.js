@@ -73,6 +73,23 @@ function Tweet(props) {
     const display = ["default", "dim", "lightsout"].includes(props.config.display) ? props.config.display : "default";
     const totalCount = props.config.retweets + props.config.quotedTweets + props.config.likes;
 
+    /**
+     * Get number of images
+     */
+    let imageCount = 0
+    if(typeof props.config.image !== "undefined" && props.config.image !== "") {
+        imageCount++
+    }
+    if(typeof props.config.image1 !== "undefined" && props.config.image1 !== "") {
+        imageCount++
+    }
+    if(typeof props.config.image2 !== "undefined" && props.config.image2 !== "") {
+        imageCount++
+    }
+    if(typeof props.config.image3 !== "undefined" && props.config.image3 !== "") {
+        imageCount++
+    }
+
     return (
         <div className={"tweet " + display}>
             <div className="user-info">
@@ -96,9 +113,20 @@ function Tweet(props) {
             </div>
             <div className="tweet-text">
                 {typeof text !== "undefined" && text !== "" && <div className="txt">{text}</div>}
-                {typeof props.config.image !== "undefined" && props.config.image !== "" &&
+                {imageCount === 1 &&
                     <div className="image-container">
                         <img src={props.config.image} alt="" />
+                    </div>
+                }
+                {imageCount === 2 &&
+                    <div className="two-image-container">
+                        <div className="two-image-image-one">
+                            <img src={props.config.image} alt="" />
+                        </div>
+                        <div className="spacer"></div>
+                        <div className="two-image-image-two">
+                            <img src={props.config.image1} alt="" />
+                        </div>
                     </div>
                 }
             </div>
