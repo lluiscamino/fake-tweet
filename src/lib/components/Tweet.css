@@ -191,6 +191,49 @@
     border-bottom-right-radius: 13px;
 }
 
+/**
+* Three Images
+*/
+.three-image-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 318px;
+}
+.three-image-container .three-image-image-one {
+    width: 49.5%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+.three-image-container .vertical-spacer {
+    width: 2px;
+    height: 100%;
+    float: left;
+}
+.three-image-container .right-col {
+    float: left;
+    width: 49.5%;
+    height: 100%;
+}
+.three-image-container .three-image-image-two {
+    height: 158px;
+    overflow: hidden;
+    border-top-right-radius: 13px;
+}
+
+.three-image-container .right-col .horizontal-spacer {
+    height: 2px;
+    overflow: hidden;
+}
+
+.three-image-container .three-image-image-three {
+    height: 158px;
+    overflow: hidden;
+    border-bottom-right-radius: 13px;
+}
 
 .twemoji-sm, .twemoji-bg {
     position: relative;
