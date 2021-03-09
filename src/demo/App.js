@@ -14,7 +14,7 @@ function App() {
   const [image, setImage] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
   const [image1, setImage1] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
   const [image2, setImage2] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
-  const [image3, setImage3] = useState("");
+  const [image3, setImage3] = useState("https://pbs.twimg.com/media/EMVe-JgWwAEwrdw?format=jpg&name=small");
   const [date, setDate] = useState("9:06 PM · Dec 21, 2019");
   const [app, setApp] = useState("Twitter Media Studio");
   const [retweets, setRetweets] = useState(47081);

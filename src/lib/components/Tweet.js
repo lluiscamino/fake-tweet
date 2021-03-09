@@ -146,6 +146,29 @@ function Tweet(props) {
                         </div>
                     </div>
                 }
+                {imageCount === 4 &&
+                    <div className="four-image-container">
+                        <div className="left-col">
+                            <div className="four-image-image-one">
+                                <img src={props.config.image} alt="" />
+                            </div>
+                            <div className="horizontal-spacer"></div>
+                            <div className="four-image-image-two">
+                                <img src={props.config.image1} alt="" />
+                            </div>
+                        </div>
+                        <div className="vertical-spacer"></div>
+                        <div className="right-col">
+                            <div className="four-image-image-three">
+                                <img src={props.config.image2} alt="" />
+                            </div>
+                            <div className="horizontal-spacer"></div>
+                            <div className="four-image-image-four">
+                                <img src={props.config.image3} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
             <div className="date-app-details">
                 {props.config.date} · <span className="fake-link app">{props.config.app}</span>
