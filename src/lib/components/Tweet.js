@@ -6,6 +6,10 @@ import processString from "react-process-string";
 function Tweet(props) {
 
     const [text, setText] = useState(props.config.text);
+    let {image} = props.config
+    if(image && typeof image === 'string') {
+        image =[image]
+    }
 
     useEffect(() => {
         setText(processString(
@@ -96,9 +100,60 @@ function Tweet(props) {
             </div>
             <div className="tweet-text">
                 {typeof text !== "undefined" && text !== "" && <div className="txt">{text}</div>}
-                {typeof props.config.image !== "undefined" && props.config.image !== "" &&
+                {image && image.length === 1 &&
                     <div className="image-container">
-                        <img src={props.config.image} alt="" />
+                        <img src={image} alt="" />
+                    </div>
+                }
+                {image && image.length === 2 &&
+                    <div className="two-image-container">
+                        <div className="two-image-image-one">
+                            <img src={image[0]} alt="" />
+                        </div>
+                        <div className="spacer"></div>
+                        <div className="two-image-image-two">
+                            <img src={image[1]} alt="" />
+                        </div>
+                    </div>
+                }
+                {image && image.length === 3 &&
+                    <div className="three-image-container">
+                        <div className="three-image-image-one">
+                            <img src={image[0]} alt="" />
+                        </div>
+                        <div className="vertical-spacer"></div>
+                        <div className="right-col">
+                            <div className="three-image-image-two">
+                                <img src={image[1]} alt="" />
+                            </div>
+                            <div className="horizontal-spacer"></div>
+                            <div className="three-image-image-three">
+                                <img src={image[2]} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                }
+                {image && image.length === 4 &&
+                    <div className="four-image-container">
+                        <div className="left-col">
+                            <div className="four-image-image-one">
+                                <img src={image[0]} alt="" />
+                            </div>
+                            <div className="horizontal-spacer"></div>
+                            <div className="four-image-image-two">
+                                <img src={image[1]} alt="" />
+                            </div>
+                        </div>
+                        <div className="vertical-spacer"></div>
+                        <div className="right-col">
+                            <div className="four-image-image-three">
+                                <img src={image[2]} alt="" />
+                            </div>
+                            <div className="horizontal-spacer"></div>
+                            <div className="four-image-image-four">
+                                <img src={image[3]} alt="" />
+                            </div>
+                        </div>
                     </div>
                 }
             </div>

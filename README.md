@@ -59,7 +59,7 @@ You also need to pass a `config` object to the component with the following prop
   - **Locked**: Set to true to include the private account icon
 - **Display**: Twitter theme (``default``, ``dim`` or ``lightsout``)
 - **Text**: The text the tweet will display
-- **Image (optional)**: You can include an image to the tweet
+- **Image (optional)**: You can include an image to the tweet. Can be either a single URL string or an array of up to four URL strings for multiple images.
 - **Date**: A string that represents a date
 - **App**: For example, "Twitter for iPhone"
 - **Retweets**: Number of retweets
