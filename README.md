@@ -33,9 +33,6 @@ function App() {
     display: "default",
     text: "This is a fake tweet",
     image: "",
-    image1: "",
-    image2: "",
-    image3: "",
     date: "3:32 PM · Feb 14, 1997",
     app: "Twitter for iPhone",
     retweets: 32000,
@@ -62,10 +59,7 @@ You also need to pass a `config` object to the component with the following prop
   - **Locked**: Set to true to include the private account icon
 - **Display**: Twitter theme (``default``, ``dim`` or ``lightsout``)
 - **Text**: The text the tweet will display
-- **Image (optional)**: You can include an image to the tweet
-- **Image 1 (optional)**: You can include a second image to the tweet
-- **Image 2 (optional)**: You can include a third image to the tweet
-- **Image 3 (optional)**: You can include a fourth image to the tweet
+- **Image (optional)**: You can include an image to the tweet. Can be either a single URL string or an array of up to four URL strings for multiple images.
 - **Date**: A string that represents a date
 - **App**: For example, "Twitter for iPhone"
 - **Retweets**: Number of retweets
