@@ -21,6 +21,24 @@ function App() {
   const [quotedTweets, setQuotedTweets] = useState(5526);
   const [likes, setLikes] = useState(180500);
 
+  let finalImg = null
+  if(image) {
+    if(!image1 && !image2 && !image3) {
+      finalImg = image
+    } else {
+      finalImg = [image]
+      if(image1) {
+        finalImg.push(image1)
+      }
+      if(image2) {
+        finalImg.push(image2)
+      }
+      if(image3) {
+        finalImg.push(image3)
+      }
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -35,10 +53,7 @@ function App() {
             },
             display: display, // default, dim or light-out
             text: text,
-            image: image,
-            image1: image1,
-            image2: image2,
-            image3: image3,
+            image: finalImg,
             date: date,
             app: app,
             retweets: retweets,

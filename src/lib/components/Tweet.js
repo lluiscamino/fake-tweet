@@ -6,6 +6,10 @@ import processString from "react-process-string";
 function Tweet(props) {
 
     const [text, setText] = useState(props.config.text);
+    let {image} = props.config
+    if(image && typeof image === 'string') {
+        image =[image]
+    }
 
     useEffect(() => {
         setText(processString(
@@ -73,23 +77,6 @@ function Tweet(props) {
     const display = ["default", "dim", "lightsout"].includes(props.config.display) ? props.config.display : "default";
     const totalCount = props.config.retweets + props.config.quotedTweets + props.config.likes;
 
-    /**
-     * Get number of images
-     */
-    let imageCount = 0
-    if(typeof props.config.image !== "undefined" && props.config.image !== "") {
-        imageCount++
-    }
-    if(typeof props.config.image1 !== "undefined" && props.config.image1 !== "") {
-        imageCount++
-    }
-    if(typeof props.config.image2 !== "undefined" && props.config.image2 !== "") {
-        imageCount++
-    }
-    if(typeof props.config.image3 !== "undefined" && props.config.image3 !== "") {
-        imageCount++
-    }
-
     return (
         <div className={"tweet " + display}>
             <div className="user-info">
@@ -113,58 +100,58 @@ function Tweet(props) {
             </div>
             <div className="tweet-text">
                 {typeof text !== "undefined" && text !== "" && <div className="txt">{text}</div>}
-                {imageCount === 1 &&
+                {image && image.length === 1 &&
                     <div className="image-container">
-                        <img src={props.config.image} alt="" />
+                        <img src={image} alt="" />
                     </div>
                 }
-                {imageCount === 2 &&
+                {image && image.length === 2 &&
                     <div className="two-image-container">
                         <div className="two-image-image-one">
-                            <img src={props.config.image} alt="" />
+                            <img src={image[0]} alt="" />
                         </div>
                         <div className="spacer"></div>
                         <div className="two-image-image-two">
-                            <img src={props.config.image1} alt="" />
+                            <img src={image[1]} alt="" />
                         </div>
                     </div>
                 }
-                {imageCount === 3 &&
+                {image && image.length === 3 &&
                     <div className="three-image-container">
                         <div className="three-image-image-one">
-                            <img src={props.config.image} alt="" />
+                            <img src={image[0]} alt="" />
                         </div>
                         <div className="vertical-spacer"></div>
                         <div className="right-col">
                             <div className="three-image-image-two">
-                                <img src={props.config.image1} alt="" />
+                                <img src={image[1]} alt="" />
                             </div>
                             <div className="horizontal-spacer"></div>
                             <div className="three-image-image-three">
-                                <img src={props.config.image2} alt="" />
+                                <img src={image[2]} alt="" />
                             </div>
                         </div>
                     </div>
                 }
-                {imageCount === 4 &&
+                {image && image.length === 4 &&
                     <div className="four-image-container">
                         <div className="left-col">
                             <div className="four-image-image-one">
-                                <img src={props.config.image} alt="" />
+                                <img src={image[0]} alt="" />
                             </div>
                             <div className="horizontal-spacer"></div>
                             <div className="four-image-image-two">
-                                <img src={props.config.image1} alt="" />
+                                <img src={image[1]} alt="" />
                             </div>
                         </div>
                         <div className="vertical-spacer"></div>
                         <div className="right-col">
                             <div className="four-image-image-three">
-                                <img src={props.config.image2} alt="" />
+                                <img src={image[2]} alt="" />
                             </div>
                             <div className="horizontal-spacer"></div>
                             <div className="four-image-image-four">
-                                <img src={props.config.image3} alt="" />
+                                <img src={image[3]} alt="" />
                             </div>
                         </div>
                     </div>
