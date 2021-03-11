@@ -40,15 +40,15 @@
 .verified-icon-svg {
     fill: rgba(29,161,242,1.00);
 }
-.tweet-text {
+.tweet-content {
     padding-top: 6px;
     font-size: 23px;
     clear: left;
 }
-.tweet-text .txt {
+.tweet-content .txt {
     padding-bottom: 15px;
 }
-.date-app-details {
+.metadata {
     color: rgb(101, 119, 134);
     padding-bottom: 15px;
     border-bottom: 1px solid #e6ecf0;
@@ -150,6 +150,7 @@
 .bottom-button.red svg:hover {
     background-color: rgba(215, 42, 94, 0.1);
 }
+/* Images */
 .image-container {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -160,138 +161,63 @@
     border: 1px solid #ccd6dd;
     width: 100%;
 }
-
-/**
-* Two images
-*/
-.two-image-container {
+.images-container {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
     height: 318px;
+    border-radius: 13px;
+    border: 1px solid #ccd6dd;
 }
-.two-image-container .two-image-image-one {
-    width: 49%;
+.images-container img {
+    cursor: pointer;
+}
+.full-height-image {
+    width: calc(50% - 1px);
     height: 100%;
     overflow: hidden;
-    float: left;
-    border-top-left-radius: 13px;
-    border-bottom-left-radius: 13px;
 }
-.two-image-container .spacer {
-    width: 2px;
+.full-height-image img {
     height: 100%;
+    min-width: 100%;
+}
+.left-image {
     float: left;
 }
-.two-image-container .two-image-image-two {
-    width: 49%;
-    height: 100%;
+.half-height-image {
+    height: 158px;
     overflow: hidden;
-    border-top-right-radius: 13px;
-    border-bottom-right-radius: 13px;
 }
-
-/**
-* Three Images
-*/
-.three-image-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.half-height-image img {
     width: 100%;
-    height: 318px;
+    min-height: 158px;
 }
-.three-image-container .three-image-image-one {
-    width: 49.5%;
-    height: 100%;
-    overflow: hidden;
+.images-container .right-col, .left-col {
     float: left;
-    border-top-left-radius: 13px;
-    border-bottom-left-radius: 13px;
+    width: calc(50% - 1px);
+    height: 100%;
 }
-.three-image-container .vertical-spacer {
+.images-container .horizontal-spacer {
+    height: 2px;
+    overflow: hidden;
+}
+.vertical-spacer {
     width: 2px;
     height: 100%;
     float: left;
 }
-.three-image-container .right-col {
-    float: left;
-    width: 49.5%;
-    height: 100%;
-}
-.three-image-container .three-image-image-two {
-    height: 158px;
-    overflow: hidden;
-    border-top-right-radius: 13px;
-}
-
-.three-image-container .right-col .horizontal-spacer {
-    height: 2px;
-    overflow: hidden;
-}
-
-.three-image-container .three-image-image-three {
-    height: 158px;
-    overflow: hidden;
-    border-bottom-right-radius: 13px;
-}
-
-/**
-* Four Images
-*/
-.four-image-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 318px;
-}
-
-.four-image-container .left-col {
-    float: left;
-    width: 49.5%;
-    height: 100%;
-}
-
-.four-image-container .four-image-image-one {
-    height: 158px;
-    overflow: hidden;
+.tl {
     border-top-left-radius: 13px;
 }
-.four-image-container .left-col .horizontal-spacer {
-    height: 2px;
-    overflow: hidden;
-}
-.four-image-container .four-image-image-two {
-    height: 158px;
-    overflow: hidden;
+.bl {
     border-bottom-left-radius: 13px;
 }
-.four-image-container .vertical-spacer {
-    width: 2px;
-    height: 100%;
-    float: left;
-}
-.four-image-container .right-col {
-    float: left;
-    width: 49.5%;
-    height: 100%;
-}
-.four-image-container .four-image-image-three {
-    height: 158px;
-    overflow: hidden;
+.tr {
     border-top-right-radius: 13px;
 }
-
-.four-image-container .right-col .horizontal-spacer {
-    height: 2px;
-    overflow: hidden;
-}
-
-.four-image-container .four-image-image-four {
-    height: 158px;
-    overflow: hidden;
+.br {
     border-bottom-right-radius: 13px;
 }
-
 .twemoji-sm, .twemoji-bg {
     position: relative;
     top: 4px;
@@ -317,7 +243,7 @@
 .lightsout .rt-likes strong {
     color: rgb(217, 217, 217);
 }
-.lightsout .rt-likes, .lightsout .date-app-details, .lightsout .image-container img {
+.lightsout .rt-likes, .lightsout .metadata, .lightsout .image-container img, .lightsout .images-container {
     border-color: rgb(47, 51, 54);
 }
 .lightsout .verified-icon-svg, .lightsout .lock-icon-svg {
@@ -332,7 +258,7 @@
 .dim .rt-likes strong {
     color: rgb(255, 255, 255);
 }
-.dim .rt-likes, .dim .date-app-details, .dim .image-container img {
+.dim .rt-likes, .dim .metadata, .dim .image-container img, .dim .images-container {
     border-color: rgb(47, 51, 54);
 }
 .dim .verified-icon-svg, .dim .lock-icon-svg {
