@@ -1,6 +1,6 @@
 {
-  "short_name": "React Library",
-  "name": "Create React Library Sample",
+  "short_name": "Create Fake Tweet",
+  "name": "Create Fake Tweet",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1da1f2",
+  "background_color": "#fdfdfd"
 }
