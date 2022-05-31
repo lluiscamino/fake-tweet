@@ -35,6 +35,7 @@
   },
   "name": "fake-tweet",
   "description": "Tweet React Component",
+  "keywords": ["tweet", "fake-tweet", "twitter", "fake", "react", "component"],
   "author": "Lluís Camino",
   "homepage": "https://lluiscamino.github.io/fake-tweet",
   "module": "dist/fake-tweet.esm.js",
