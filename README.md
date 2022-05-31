@@ -19,7 +19,6 @@ To use the `fake-tweet` component in your app after having installed it, import 
 ```javascript
 import React from "react";
 import FakeTweet from "fake-tweet";
-import "fake-tweet/build/index.css";
 
 function App() {
   const config = {
