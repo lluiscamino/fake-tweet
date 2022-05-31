@@ -14,7 +14,7 @@ npm i fake-tweet
 
 ## Usage
 
-To use the `fake-tweet` component in your app after having installed it, import the component and its stylesheet:
+The following snippet is an example of use of the `fake-tweet` component:
 
 ```javascript
 import React from "react";
