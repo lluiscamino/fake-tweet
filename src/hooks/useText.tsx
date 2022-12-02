@@ -20,6 +20,10 @@ function useText(rawText: any) {
           regex: /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/,
           fn: handleEmoji,
         },
+        {
+          regex: /(?:^|[^a-zA-Z0-9_＠!@#$%&*])(?:https?:\/\/)(\S+\.\S+)/,
+          fn: handleUrl,
+        },
       ])(rawText)
     );
   }, [rawText]);
@@ -41,6 +45,16 @@ function handleHashtag(key: string, result: string[]) {
     <span key={key}>
       {' '}
       <span className="fake-link mention"> #{result[1]}</span>
+    </span>
+  );
+}
+
+function handleUrl(key: string, result: string[]) {
+  console.log(key, result);
+  return (
+    <span key={key}>
+      {' '}
+      <span className="fake-link mention"> {result[1]}</span>
     </span>
   );
 }
