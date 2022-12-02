@@ -50,7 +50,6 @@ function handleHashtag(key: string, result: string[]) {
 }
 
 function handleUrl(key: string, result: string[]) {
-  console.log(key, result);
   return (
     <span key={key}>
       {' '}
